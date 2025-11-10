@@ -570,4 +570,5 @@ export default function NetflixLanding() {
       `}</style>
     </div>
   );
+
 }
