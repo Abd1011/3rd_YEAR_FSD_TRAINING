@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f1f3f6;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #2874f0;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.logo .plus {
+  font-size: 0.8rem;
+  color: #ffe500;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 2px 0 0 2px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  border: none;
+  background: #ffe500;
+  cursor: pointer;
+  border-radius: 0 2px 2px 0;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  font-size: 0.9rem;
+}
+
+.badge {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0 5px;
+  font-size: 0.75rem;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  background: #fff;
+  padding: 15px 0;
+}
+
+.cat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #212121;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cat-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(90deg, #ff5f6d, #ffc371);
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  background: #fff;
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.banner-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.banner-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.cta {
+  background: #2874f0;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media(max-width: 768px) {
+  .categories {
+    flex-wrap: wrap;
+  }
+  .search-bar {
+    max-width: 300px;
+  }
+}

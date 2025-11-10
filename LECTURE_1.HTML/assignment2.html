@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bus Booking Form</title>
+</head>
+<body>
+    <center>
+  <h2>* Welcome to Bus booking System *</h2>
+    </center>
+  <form>
+    <fieldset>
+      <legend>User Detail</legend>
+      <label>User Name:
+        <input type="text" name="username">
+      </label>
+      <br><br>
+
+      <label>User Gender:</label><br>
+      <input type="radio" name="gender" value="male"> Male<br>
+      <input type="radio" name="gender" value="female"> Female
+      <br><br>
+
+      <label>User Select City:
+        <select name="city">
+          <option>Select City</option>
+          <option>Delhi</option>
+          <option>Mumbai</option>
+          <option>Lucknow</option>
+          <option>Bengaluru</option>
+        </select>
+      </label>
+      <br><br>
+
+      <label>Select your sheet:</label><br>
+      <input type="radio" name="type" value="ac"> AC<br>
+      <input type="radio" name="type" value="non-ac"> Non-AC
+    </fieldset>
+
+    <br>
+    <button type="submit">Book Sheet</button>
+  </form>
+</body>
+</html>
